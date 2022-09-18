@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HolaMundoComponent } from './hola-mundo.component';
 import { NuevoComponenteComponent } from './ruta/nuevo-componente/nuevo-componente.component';
 import { NuevoTestComponent } from './nuevo-test/nuevo-test.component';
+import { peliculasService } from './pelicula.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { NuevoTestComponent } from './nuevo-test/nuevo-test.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [peliculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
